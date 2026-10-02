@@ -76,7 +76,11 @@ pybind11::class_<A>& define_logical(pybind11::module&, pybind11::class_<A>& pycl
 
 } // namespace Ariadne
 
+#if defined(__GNUC__) || defined(__clang__)
+namespace PyBind11 __attribute__((visibility("hidden"))) {
+#else
 namespace PyBind11 {
+#endif
 
 template<template<class...>class T> class Template { };
 
