@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(PythonCommon VERSION 3.0 LANGUAGES CXX)
+project(AriadnePythonCommon VERSION 3.0 LANGUAGES CXX)
 
 add_library(pyariadne-python-common INTERFACE)
 target_include_directories(pyariadne-python-common INTERFACE
